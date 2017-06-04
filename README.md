@@ -20,7 +20,7 @@ Way to run the project:
 
 10) Failure captured will be displayed in the report.
 
-11) Output and response times are captured and are printed in logs.
+11) Output and response times are captured and are printed on console.
 
 11) The broken links and working links will be printed on the console. 
 
