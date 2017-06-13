@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Cucumber Suite" duration-ms="835424" started-at="2017-06-04T07:15:22Z" finished-at="2017-06-04T07:29:17Z">
+  <suite name="Cucumber Suite" duration-ms="141493" started-at="2017-06-09T03:44:07Z" finished-at="2017-06-09T03:46:29Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Cucumber Test2" duration-ms="835424" started-at="2017-06-04T07:15:22Z" finished-at="2017-06-04T07:29:17Z">
+    <test name="Cucumber Test2" duration-ms="141493" started-at="2017-06-09T03:44:07Z" finished-at="2017-06-09T03:46:29Z">
       <class name="com.testrunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="setUpClass" is-config="true" duration-ms="208" started-at="2017-06-04T12:45:22Z" finished-at="2017-06-04T12:45:22Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="setUpClass" is-config="true" duration-ms="288" started-at="2017-06-09T09:14:07Z" finished-at="2017-06-09T09:14:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeSetup(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="beforeSetup" is-config="true" duration-ms="2837" started-at="2017-06-04T12:45:22Z" finished-at="2017-06-04T12:45:25Z">
+        <test-method status="PASS" signature="beforeSetup(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="beforeSetup" is-config="true" duration-ms="2791" started-at="2017-06-09T09:14:08Z" finished-at="2017-06-09T09:14:10Z">
           <params>
             <param index="0">
               <value>
@@ -25,29 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSetup -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="feature" duration-ms="72618" started-at="2017-06-04T12:45:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-04T12:46:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[To Test Banner Position is not Lat.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="feature" duration-ms="713462" started-at="2017-06-04T12:46:37Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-04T12:58:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[To Test Broken Links.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="feature" duration-ms="14808" started-at="2017-06-04T12:58:31Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-04T12:58:46Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="feature" duration-ms="5146" started-at="2017-06-09T09:14:11Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-09T09:14:16Z">
           <params>
             <param index="0">
               <value>
@@ -57,10 +35,10 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [1] but found [14]]]>
+              <![CDATA[java.lang.AssertionError: expected [1] but found [4]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [1] but found [14]
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [1] but found [4]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -88,7 +66,7 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: java.lang.AssertionError: expected [1] but found [14]
+Caused by: java.lang.AssertionError: expected [1] but found [4]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
@@ -96,7 +74,7 @@ Caused by: java.lang.AssertionError: expected [1] but found [14]
 	at org.testng.Assert.assertEquals(Assert.java:388)
 	at org.testng.Assert.assertEquals(Assert.java:398)
 	at com.pageobjects.HomePage.checkPageisLoaded(HomePage.java:42)
-	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:71)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:69)
 	at ✽.Then Check whether page is loaded within 1 second(BuyInsurance.feature:5)
 ]]>
             </full-stacktrace>
@@ -104,7 +82,7 @@ Caused by: java.lang.AssertionError: expected [1] but found [14]
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="feature" duration-ms="12815" started-at="2017-06-04T12:58:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-04T12:58:58Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="feature" duration-ms="2502" started-at="2017-06-09T09:14:16Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-09T09:14:18Z">
           <params>
             <param index="0">
               <value>
@@ -114,10 +92,10 @@ Caused by: java.lang.AssertionError: expected [1] but found [14]
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [5] but found [12]]]>
+              <![CDATA[java.lang.AssertionError: expected [5] but found [2]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [5] but found [12]
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [5] but found [2]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -145,7 +123,7 @@ Caused by: java.lang.AssertionError: expected [1] but found [14]
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: java.lang.AssertionError: expected [5] but found [12]
+Caused by: java.lang.AssertionError: expected [5] but found [2]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
@@ -153,7 +131,7 @@ Caused by: java.lang.AssertionError: expected [5] but found [12]
 	at org.testng.Assert.assertEquals(Assert.java:388)
 	at org.testng.Assert.assertEquals(Assert.java:398)
 	at com.pageobjects.HomePage.checkPageisLoaded(HomePage.java:42)
-	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:71)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:69)
 	at ✽.Then Check whether page is loaded within 5 second(CheckPageLoad5Seconds.feature:5)
 ]]>
             </full-stacktrace>
@@ -161,7 +139,7 @@ Caused by: java.lang.AssertionError: expected [5] but found [12]
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="feature" duration-ms="13476" started-at="2017-06-04T12:58:58Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-04T12:59:12Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="feature" duration-ms="125527" started-at="2017-06-09T09:14:18Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-09T09:16:24Z">
           <params>
             <param index="0">
               <value>
@@ -169,10 +147,112 @@ Caused by: java.lang.AssertionError: expected [5] but found [12]
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='slidecontent']//h2[text()='Sign Up Today!'] (tried for 120 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='slidecontent']//h2[text()='Sign Up Today!'] (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='slidecontent']//h2[text()='Sign Up Today!'] (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.setup.GenericMethods.waitMethod(GenericMethods.java:143)
+	at com.setup.GenericMethods.getText(GenericMethods.java:123)
+	at com.pageobjects.HomePage.checkWhetherDesiredBanner(HomePage.java:81)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_it_is_desiredbanner(HomePageStepDefinition.java:74)
+	at ✽.Then Check whether it is a desired banner(DetermineBannerPosition.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class='slidecontent']//h2[text()='Sign Up Today!']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Ashwins-MBP', ip: 'fe80:0:0:0:1833:c87c:cf4b:9cd8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.setup.GenericMethods.waitMethod(GenericMethods.java:143)
+	at com.setup.GenericMethods.getText(GenericMethods.java:123)
+	at com.pageobjects.HomePage.checkWhetherDesiredBanner(HomePage.java:81)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_it_is_desiredbanner(HomePageStepDefinition.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="shutDown(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="shutDown" is-config="true" duration-ms="5094" started-at="2017-06-04T12:59:12Z" finished-at="2017-06-04T12:59:17Z">
+        <test-method status="PASS" signature="shutDown(java.lang.String)[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="shutDown" is-config="true" duration-ms="5103" started-at="2017-06-09T09:16:24Z" finished-at="2017-06-09T09:16:29Z">
           <params>
             <param index="0">
               <value>
@@ -183,7 +263,7 @@ Caused by: java.lang.AssertionError: expected [5] but found [12]
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@a67c67e]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2017-06-04T12:59:17Z" finished-at="2017-06-04T12:59:17Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@29ca901e]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2017-06-09T09:16:29Z" finished-at="2017-06-09T09:16:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
