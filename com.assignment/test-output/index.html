@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Cucumber_Suite" class="show-methods failed suite-Cucumber_Suite"> (show)</a> <!-- show-methods failed suite-Cucumber_Suite -->
                     </span>
                     <div class="method-list-content failed suite-Cucumber_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(To Test Banner Position.)">feature(To Test Banner Position.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(To Test Performance and loading time.)">feature(To Test Performance and loading time.)</a> <!-- method navigator-link -->
@@ -111,30 +116,6 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Cucumber_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Cucumber_Suite" class="hide-methods passed suite-Cucumber_Suite"> (hide)</a> <!-- hide-methods passed suite-Cucumber_Suite -->
-                      <a href="#" panel-name="suite-Cucumber_Suite" class="show-methods passed suite-Cucumber_Suite"> (show)</a> <!-- show-methods passed suite-Cucumber_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Cucumber_Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(To Test Banner Position is not Lat.)">feature(To Test Banner Position is not Lat.)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(To Test Banner Position.)">feature(To Test Banner Position.)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Suite" title="com.testrunner.TestRunner" hash-for-method="feature(To Test Broken Links.)">feature(To Test Broken Links.)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Cucumber_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -154,17 +135,69 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="feature(To Test Banner Position.)">
+                  </a> <!-- feature(To Test Banner Position.) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(To Test Banner Position.)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;slidecontent&apos;]//h2[text()=&apos;Sign Up Today!&apos;] (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;slidecontent&apos;]//h2[text()=&apos;Sign Up Today!&apos;] (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.setup.GenericMethods.waitMethod(GenericMethods.java:143)
+	at com.setup.GenericMethods.getText(GenericMethods.java:123)
+	at com.pageobjects.HomePage.checkWhetherDesiredBanner(HomePage.java:81)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_it_is_desiredbanner(HomePageStepDefinition.java:74)
+	at ✽.Then Check whether it is a desired banner(DetermineBannerPosition.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class=&apos;slidecontent&apos;]//h2[text()=&apos;Sign Up Today!&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Ashwins-MBP&apos;, ip: &apos;fe80:0:0:0:1833:c87c:cf4b:9cd8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.setup.GenericMethods.waitMethod(GenericMethods.java:143)
+	at com.setup.GenericMethods.getText(GenericMethods.java:123)
+	at com.pageobjects.HomePage.checkWhetherDesiredBanner(HomePage.java:81)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_it_is_desiredbanner(HomePageStepDefinition.java:74)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+... Removed 54 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="feature(To Test Performance and loading time.)">
                   </a> <!-- feature(To Test Performance and loading time.) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(To Test Performance and loading time.)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [1] but found [14]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [5] but found [2]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [1] but found [14]
+Caused by: java.lang.AssertionError: expected [5] but found [2]
 	at com.pageobjects.HomePage.checkPageisLoaded(HomePage.java:42)
-	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:71)
-	at ✽.Then Check whether page is loaded within 1 second(BuyInsurance.feature:5)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:69)
+	at ✽.Then Check whether page is loaded within 5 second(CheckPageLoad5Seconds.feature:5)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -177,13 +210,13 @@ Caused by: java.lang.AssertionError: expected [1] but found [14]
                   </a> <!-- feature(To Test Performance and loading time.) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(To Test Performance and loading time.)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [5] but found [12]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [1] but found [4]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [5] but found [12]
+Caused by: java.lang.AssertionError: expected [1] but found [4]
 	at com.pageobjects.HomePage.checkPageisLoaded(HomePage.java:42)
-	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:71)
-	at ✽.Then Check whether page is loaded within 5 second(CheckPageLoad5Seconds.feature:5)
+	at com.pagedefinitions.HomePageStepDefinition.check_whether_page_is_loaded_within_seconds(HomePageStepDefinition.java:69)
+	at ✽.Then Check whether page is loaded within 1 second(BuyInsurance.feature:5)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -192,48 +225,10 @@ Caused by: java.lang.AssertionError: expected [5] but found [12]
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Cucumber_Suite-class-failed -->
-          <div class="suite-Cucumber_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.testrunner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(To Test Banner Position is not Lat.)">
-                  </a> <!-- feature(To Test Banner Position is not Lat.) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(To Test Banner Position is not Lat.)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(To Test Banner Position.)">
-                  </a> <!-- feature(To Test Banner Position.) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(To Test Banner Position.)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(To Test Broken Links.)">
-                  </a> <!-- feature(To Test Broken Links.) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(To Test Broken Links.)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cucumber_Suite-class-passed -->
         </div> <!-- panel Cucumber_Suite -->
         <div panel-name="test-xml-Cucumber_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/ashwin/work/learning/BlueOptima3/com.assignment/resources/TestNG.xml</span>
+            <span class="header-content">/Users/ashwin/work/learning/Asrto/com.assignment/resources/TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -291,32 +286,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.testrunner.TestRunner')
-data.setCell(0, 3, 713462);
+data.setCell(0, 3, 125527);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'com.testrunner.TestRunner')
-data.setCell(1, 3, 72618);
+data.setCell(1, 3, 5146);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
 data.setCell(2, 2, 'com.testrunner.TestRunner')
-data.setCell(2, 3, 14808);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'feature')
-data.setCell(3, 2, 'com.testrunner.TestRunner')
-data.setCell(3, 3, 13476);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'feature')
-data.setCell(4, 2, 'com.testrunner.TestRunner')
-data.setCell(4, 3, 12815);
+data.setCell(2, 3, 2502);
 window.suiteTableData['Cucumber_Suite']= { tableData: data, tableDiv: 'times-div-Cucumber_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Cucumber_Suite">
               </div> <!-- times-div-Cucumber_Suite -->
             </div> <!-- times-div -->
@@ -349,39 +336,33 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSetup(Chrome)</span>
-                <span class="method-start">208 ms</span>
+                <span class="method-start">288 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">feature(To Test Banner Position is not Lat.)</span>
-                <span class="method-start">3123 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(To Test Broken Links.)</span>
-                <span class="method-start">75743 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(To Test Performance and loading time.)</span>
+                <span class="method-start">3184 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(To Test Performance and loading time.)</span>
-                <span class="method-start">789207 ms</span>
+                <span class="method-start">8334 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(To Test Performance and loading time.)</span>
-                <span class="method-start">804021 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">feature(To Test Banner Position.)</span>
-                <span class="method-start">816838 ms</span>
+                <span class="method-start">10837 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">shutDown(Chrome)</span>
-                <span class="method-start">830316 ms</span>
+                <span class="method-start">136369 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">835410 ms</span>
+                <span class="method-start">141472 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

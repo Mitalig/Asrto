@@ -22,8 +22,6 @@ public class HomePageStepDefinition extends WebSetup {
 	  hp.navigateToHomePage(url);
 	  
   }
-  
- 
 
   @And("^Click on Third Banner$")
   public void you_click_on_thirdbanner()  {

@@ -8,7 +8,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="beforeSetup"/>
-          <include name="feature" invocation-numbers="2 3"/>
+          <include name="feature" invocation-numbers="0 1 2"/>
           <include name="shutDown"/>
           <include name="tearDownClass"/>
         </methods>
