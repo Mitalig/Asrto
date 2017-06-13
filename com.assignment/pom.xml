@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 
-	<name>Astro</name>
+	<name>Astro Mobile</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
