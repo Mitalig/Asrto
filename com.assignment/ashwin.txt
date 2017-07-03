@@ -3,3 +3,4 @@
 --- Forming the team of developers
 --- Forming the development process
 --- Forming the team of designers
+--- Forming the team of HR and operations
